@@ -6,7 +6,7 @@ html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
-    <title>PournamyPS | CSE Student</title>
+    <title>PournamyPS Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <style>
         /* ============================================================
@@ -143,6 +143,7 @@ html
         .proj-type.micro { color: #e94b8a; }
         .proj-type.mini  { color: #ff7a9e; }
         .proj-type.major { color: #d63384; }
+        .proj-type.hackathon { color: #d63384; }
         .timeline { border-left: 2px solid var(--primary-soft); padding-left: 2rem; position: relative; }
         .timeline-item { margin-bottom: 3rem; position: relative; }
         .timeline-item::before {
@@ -322,25 +323,20 @@ html
 
         <div class="sidebar-body">
 
-           <!-- 1. CV Download -->
-<div>
-    <div class="sb-section-label">📄 Resume</div>
-    <!-- Using a relative path and forcing the download attribute -->
-    <a id="cvDownloadBtn" 
-       href="PournamyPS_CV.pdf" 
-       download="PournamyPS_CV.pdf" 
-       target="_blank" 
-       class="sb-cv-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-        </svg>
-        Download CV
-    </a>
-</div>
+            <!-- 1. CV Download -->
+            <div>
+                <div class="sb-section-label">📄 Resume</div>
+                <a id="cvDownloadBtn" href="./PournamyPS_CV.pdf" download="PournamyPS_CV.pdf" class="sb-cv-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download CV
+                </a>
+            </div>
 
-<hr class="sb-divider">
+            <hr class="sb-divider">
 
             <!-- 2. Connect -->
             <div>
@@ -394,8 +390,8 @@ html
 
     <!-- ======================== ORIGINAL SECTIONS — ZERO CHANGES ======================== -->
     <section class="hero">
-        <span class="hero-tag">Crafting Digital Intelligence</span>
-        <h1>Building Digital<br><span>Elegance & Power</span></h1>
+        <span class="hero-tag">BUILDING DIGITAL ELEGANCE & POWER</span>
+        <h1>POURNAMY.P.S</h1>
         <p>I'm <strong>Pournamy</strong>, a B.Tech CSE Student Focused on full-stack development and problem solving. Passionate about creating efficient, user-friendly, and impactful digital solutions.</p>
         <div>
             <a href="#projects" class="btn">Explore My Work</a>
@@ -410,31 +406,56 @@ html
                 <button>Micro Projects</button>
                 <button>Mini Projects</button>
                 <button>Major Projects</button>
+                <button>Hackathon Projects</button>
             </div>
             <div class="project-card reveal">
                 <div class="proj-type micro">MICRO PROJECT</div>
-                <h3>Luxe Commerce</h3>
-                <p>A headless e-commerce solution built with React and Stripe, optimized for high-conversion luxury retail.</p>
+                <h3>Movie Ticket Booking System</h3>
+                <p> Built a desktop booking app with seat-level management, cancellation, and booking history. Applied OOP concepts encapsulation, abstraction, inheritance, and composition</p>
                 <div class="tags">
-                    <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Stripe</span>
+                    <span class="tag">Swing</span><span class="tag">Java</span><span class="tag">MySQL</span><span class="tag">JDBC</span>
                 </div>
             </div>
             <div class="project-card reveal" style="transition-delay: 0.1s;">
-                <div class="proj-type mini">MINI PROJECT</div>
-                <h3>SecureScale API</h3>
-                <p>Distributed backend architecture designed for 99.9% uptime and enterprise-grade data encryption.</p>
+                <div class="proj-type micro">MICRO PROJECT</div>
+                <h3>Performance Analysis of Pipelined RISC-V Architectures</h3>
+                <p> Simulated a 5-stage RISC-V pipeline to analyze data hazards and instruction flow. Compared CPI and IPC metrics across configurations with and without hazard detection</p>
                 <div class="tags">
-                    <span class="tag">Go</span><span class="tag">Docker</span><span class="tag">Redis</span>
+                    <span class="tag">Ripes</span><span class="tag">RISC-V</span>
                 </div>
             </div>
             <div class="project-card reveal" style="transition-delay: 0.2s;">
-                <div class="proj-type major">MAJOR PROJECT</div>
-                <h3>Visionary AI</h3>
-                <p>Real-time computer vision platform for identifying design patterns in architectural blueprints.</p>
+                <div class="proj-type micro">MICRO PROJECT</div>
+                <h3>Taste Trail Kerala</h3>
+                <p>Conceptualized a community-driven web platform to discover local street food vendors in Kerala. Designed vendor registration flow, interactive map integration, and hygiene rating system.</p>
                 <div class="tags">
-                    <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">AWS</span>
+                    <span class="tag">Maps API</span><span class="tag"> Firebase</span><span class="tag">Street Food Finder Web</span>
                 </div>
             </div>
+            <div class="project-card reveal" style="transition-delay: 0.3s;">
+                <div class="proj-type mini">MINI PROJECT</div>
+                <h3>RoaSafe Analytics</h3>
+                <p> Conducted EDA on road accident datasets to identify patterns and safety risk factors. Visualized findings using charts to derive meaningful insights.</p>
+                <div class="tags">
+                    <span class="tag"> Data Visualization</span><span class="tag"> Road Accidents EDA</span><span class="tag"> DAX</span>
+                </div>
+            </div>
+            <div class="project-card reveal" style="transition-delay: 0.3s;">
+                <div class="proj-type mini">MINI PROJECT</div>
+                <h3>Stroke Prediction System using Machine Learning</h3>
+                <p> Built a stroke risk prediction model using Random Forest Classifier on a real-world healthcare dataset, handling class imbalance with SMOTE to improve minority class detection. Developed an interactive web based UI using Gradio, enabling users to input patient health data and receive real-time stroke risk predictions with probability scores.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Scikitlearn</span><span class="tag">Gradio</span>
+                </div>
+            </div>
+           <div class="project-card reveal" style="transition-delay: 0.3s;">
+    <div class="proj-type hackathon">HACKATHON PROJECT</div>
+    <h3>ZenSync The Health Companion</h3>
+    <p>Developed a healthcare assistant with an interactive web interface that helps users explore hospitals, departments, and healthcare information. Integrated Groq API for real-time AI responses and deployed the backend securely using Vercel serverless functions.</p>
+    <div class="tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Groq API</span><span class="tag">Vercel</span>
+    </div>
+</div>
         </div>
     </section>
 
@@ -442,16 +463,34 @@ html
         <div class="section-header reveal"><h2>Career Path</h2></div>
         <div class="timeline">
             <div class="timeline-item reveal">
-                <div class="exp-date">2024 — Present</div>
-                <span class="exp-role">Lead Full Stack Engineer</span>
-                <span class="exp-company">Global Tech Corp</span>
-                <p>Spearheading the transition to micro-frontend architecture and managing a team of 5 engineers.</p>
+                <div class="exp-date">Oct 2024 - Present</div>
+                <span class="exp-role">Member</span>
+                <span class="exp-company">MuLearn Foundation</span>
+                <p>µLearn member focused on learning, collaboration, and tech growth.</p>
             </div>
             <div class="timeline-item reveal">
-                <div class="exp-date">2022 — 2024</div>
-                <span class="exp-role">Software Developer</span>
-                <span class="exp-company">Innovate Studio</span>
-                <p>Developed core UI library used across 12 different client products, reducing build time by 30%.</p>
+                <div class="exp-date">Jul 2025 - Present</div>
+                <span class="exp-role">Member</span>
+                <span class="exp-company">IEDC Vidya Academy of Science and Technology | IEDC VAST</span>
+                <p>Participated in innovation and entrepreneurship initiatives</p>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="exp-date">Sep 2025 - Oct 2025</div>
+                <span class="exp-role">Content Writer Intern</span>
+                <span class="exp-company">InAmigos Foundation (IAF)</span>
+                <p>Worked as a Content Writing Intern, producing engaging and structured content within deadlines.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="exp-date">Feb 2026 - Apr 2026</div>
+                <span class="exp-role">Data Analyst Intern</span>
+                <span class="exp-company">Infosys Springboard</span>
+                <p>Analytics Intern ,Performed data-driven analysis on large datasets to uncover critical patterns and insights.</p>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="exp-date">May 2026 - Aug 2026</div>
+                <span class="exp-role">Open-source Contributor</span>
+                <span class="exp-company">GirlScript Summer of Code</span>
+                <p>Open-source contributor at GirlScript Summer of Code, collaborating on real-world projects, implementing features, and improving code quality through GitHub-based development.</p>
             </div>
         </div>
     </section>
@@ -466,9 +505,9 @@ html
             <div class="skills reveal">
                 <h3 style="font-family: 'Times New Roman'; margin-bottom: 1.5rem;">Core Stack</h3>
                 <div class="tags">
-                    <span class="tag">JavaScript (ES6+)</span><span class="tag">React / Next.js</span>
-                    <span class="tag">Node.js</span><span class="tag">PostgreSQL</span>
-                    <span class="tag">Cloud Infrastructure</span><span class="tag">UI/UX Architecture</span>
+                    <span class="tag">C</span><span class="tag">C++</span>
+                    <span class="tag">Python</span><span class="tag">MySQL</span>
+                    <span class="tag">HTML/CSS</span><span class="tag">EDA</span>
                 </div>
             </div>
         </div>
@@ -478,7 +517,7 @@ html
         <div class="contact-container reveal">
             <h2>Let's build the <span>Future</span>.</h2>
             <p style="margin-bottom: 2.5rem; color: var(--text-muted);">Currently accepting new projects and collaborations.</p>
-            <a href="mailto:pournamyps9c@gmail.com" class="btn">Send a Message</a>
+            <a href="mailto:pournamy9c@gmail.com" class="btn">Send a Message</a>
         </div>
     </section>
 
@@ -538,7 +577,7 @@ html
 
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
-            if (connectModalOvl.classList.contains('open')) closeModal();
+            if (connectModalOvl.classList.contains('open')) closeModal(); 
             else if (settingsSidebar.classList.contains('open')) closeSidebar();
         }
     });
@@ -547,43 +586,49 @@ html
        SITE DATA MANAGEMENT
        ============================================================ */
 
-    const defaultData = {
-        hero: {
-            tag:         'Crafting Digital Intelligence',
-            h1Line1:     'Building Digital',
-            h1Line2:     'Elegance & Power',
-            name:        'Pournamy',
-            description: 'a B.Tech CSE Student Focused on full-stack development and problem solving. Passionate about creating efficient, user-friendly, and impactful digital solutions.'
-        },
-        projects: [
-            { type: 'micro', typeLabel: 'MICRO PROJECT', title: 'Luxe Commerce',   desc: 'A headless e-commerce solution built with React and Stripe, optimized for high-conversion luxury retail.',        tags: 'Next.js, TypeScript, Stripe' },
-            { type: 'mini',  typeLabel: 'MINI PROJECT',  title: 'SecureScale API', desc: 'Distributed backend architecture designed for 99.9% uptime and enterprise-grade data encryption.',               tags: 'Go, Docker, Redis' },
-            { type: 'major', typeLabel: 'MAJOR PROJECT', title: 'Visionary AI',    desc: 'Real-time computer vision platform for identifying design patterns in architectural blueprints.',                 tags: 'Python, PyTorch, AWS' }
-        ],
-        experience: [
-            { date: '2024 — Present', role: 'Lead Full Stack Engineer', company: 'Global Tech Corp',  desc: 'Spearheading the transition to micro-frontend architecture and managing a team of 5 engineers.' },
-            { date: '2022 — 2024',    role: 'Software Developer',       company: 'Innovate Studio',   desc: 'Developed core UI library used across 12 different client products, reducing build time by 30%.' }
-        ],
-        about: {
-            p1: 'I believe that code is an art form that should be as powerful as it is intuitive. My focus is on bridging the gap between complex engineering and beautiful design.',
-            p2: 'With a background in computer science and a passion for modern aesthetics, I build tools that empower users and push industries forward.',
-            skills: 'JavaScript (ES6+), React / Next.js, Node.js, PostgreSQL, Cloud Infrastructure, UI/UX Architecture'
-        },
-        contact: {
-            heading: 'Future',
-            subtext:  'Currently accepting new projects and collaborations.',
-            email:    'hello@yourname.com'
-        },
-        links: {
-            cvFile:   './PournamyPS_CV.pdf',
-            cvName:   'PournamyPS_CV.pdf',
-            github:   { url: 'https://github.com/PournamyPS ',        handle: 'PournamyPS'  },
-            linkedin: { url: 'https://linkedin.com/in/pournamy-p-s-745942332',   handle: 'PournamyPS'  },
-            medium:   { url: 'https://medium.com/@pournamyps9c',       handle: '@pournamyps9c'  }
-        }
-    };
 
     let siteData = null;
+     function getFilterTypeFromButton(button) {
+        const text = button.textContent.trim().toLowerCase();
+        if (text.includes('micro')) return 'micro';
+        if (text.includes('mini')) return 'mini';
+        if (text.includes('major')) return 'major';
+        if (text.includes('hackathon')) return 'hackathon';
+        return 'all';
+    }
+
+    function applyProjectFilter(filter) {
+        let visibleCount = 0;
+        document.querySelectorAll('.project-card').forEach(card => {
+            const typeEl = card.querySelector('.proj-type');
+            const type = typeEl ? Array.from(typeEl.classList).find(cls => cls !== 'proj-type') : '';
+            const isVisible = (filter === 'all' || type === filter);
+            card.style.display = isVisible ? '' : 'none';
+            if (isVisible) visibleCount++;
+        });
+        
+        let noProjectsMsg = document.getElementById('no-projects-msg');
+        if (visibleCount === 0) {
+            if (!noProjectsMsg) {
+                noProjectsMsg = document.createElement('div');
+                noProjectsMsg.id = 'no-projects-msg';
+                noProjectsMsg.style.cssText = 'text-align: center; padding: 3rem; font-size: 1.3rem; color: #e94b8a; font-weight: 600; grid-column: 1 / -1; font-style: italic;';
+                document.querySelector('.projects-grid').appendChild(noProjectsMsg);
+            }
+            noProjectsMsg.textContent = '🦗 Oops! No projects yet in this section! Time to get busy! 🦗';
+            noProjectsMsg.style.display = '';
+        } else {
+            if (noProjectsMsg) noProjectsMsg.style.display = 'none';
+        }
+    }
+
+    document.querySelectorAll('.project-filter button').forEach(button => {
+        button.addEventListener('click', function () {
+            document.querySelectorAll('.project-filter button').forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            applyProjectFilter(getFilterTypeFromButton(this));
+        });
+    });
 
     function loadData() {
         try {
@@ -619,6 +664,7 @@ html
         if (heroPara) heroPara.innerHTML = `I'm <strong>${esc(d.hero.name)}</strong>, ${esc(d.hero.description)}`;
 
         /* Projects */
+        
         const cards = document.querySelectorAll('.project-card');
         d.projects.forEach((proj, i) => {
             if (!cards[i]) return;
@@ -634,7 +680,7 @@ html
                 tagsEl.innerHTML = arr.map(t => `<span class="tag">${esc(t)}</span>`).join('');
             }
         });
-
+        
         /* Experience */
         const items = document.querySelectorAll('.timeline-item');
         d.experience.forEach((exp, i) => {
